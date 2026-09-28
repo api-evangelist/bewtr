@@ -1,0 +1,14 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.bewtr.com/en-gb/privacy-policy
+sources:
+- https://www.bewtr.com/en-gb/privacy-policy
+- https://www.bewtr.com/fr-ch/privacy-policy
+- https://www.bewtr.com/fr/privacy-policy
+- https://www.bewtr.com/ar-ae/privacy-policy
+standards:
+- id: gdpr
+  conforms: true
+  evidence: في أوروبا، نلتزم باللائحة الأوروبية العامة لحماية البيانات (لائحة (الاتحاد الأوروبي) 2016/679).
+docs: https://www.bewtr.com/en-gb/privacy-policy

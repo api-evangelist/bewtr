@@ -1,0 +1,25 @@
+generated: '2026-09-28'
+method: probed
+source: https://www.bewtr.com/en-gb/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://www.bewtr.com/en-gb/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "BE WTR offers you the opportunity to exercise the following rights, guaranteed by applicable legal bases:"
+        note: outlines data subject rights including access, correction, limitation, deletion, portability.
+  data_retention:
+    evidence:
+      - source: https://www.bewtr.com/en-gb/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "We retain your information, including personal data, for as long as: • It is necessary to achieve the purposes for which it was collected. • We have a legitimate interest in retaining the data. • It is required by law."
+        note: describes retention periods and bases.
+  subprocessors:
+    evidence:
+      - source: https://www.bewtr.com/en-gb/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "In the course of our activities and as necessary, we may disclose your personal data to our service providers (such as Salesforce) or authorities."
+        note: indicates use of subprocessors and possible cross‑border transfers.

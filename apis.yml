@@ -1,23 +1,76 @@
 aid: bewtr
+
 name: Bewtr
-description: 'Bewtr is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bewtr (BE WTR) is a premium sustainable water brand offering still and sparkling bottled water in circular premium glass packaging. The company focuses on local sourcing, high‑quality taste, and environmental stewardship, providing a range of products such as AQTiV FILTER, DUO, ONE, COMBI, and TOWER systems. Their mission emphasizes zero waste and circularity, positioning BE WTR as a leader in sustainable premium water solutions worldwide.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bewtr/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Water
+- Sustainability
+- Premium
+- BottledWater
+- CircularEconomy
+
+image: https://www.bewtr.com/hubfs/BE%20WTR%20Logo.png
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/bewtr-conformance.yml
+- type: Hosts
+  url: hosts/bewtr-hosts.yml
+- type: Vendors
+  url: vendors/bewtr-vendors.yml
+- type: DomainSecurity
+  url: security/bewtr-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bewtr
+  url: https://www.bewtr.com
+- type: Documentation
+  url: https://www.bewtr.com/resources
+- type: Support
+  url: https://www.bewtr.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.bewtr.com/privacy-policy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-28'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://www.bewtr.com/mcp
+    status: 403
+  - url: https://equityzen.com/company/bewtr
+    status: 403
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
